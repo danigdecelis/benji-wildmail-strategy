@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnóstico de fuga de ingresos - Benji (Wild Mail)</title>
+<meta property="og:title" content="Diagnóstico de fuga de ingresos - Benji (Wild Mail)">
+<meta property="og:description" content="La lectura completa del diagnóstico de Benji, con sus propios números, preparada por Copy Estratega.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+<meta property="og:url" content="https://danigdecelis.github.io/benji-wildmail-strategy/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Diagnóstico de fuga de ingresos - Benji (Wild Mail)">
+<meta name="twitter:description" content="La lectura completa del diagnóstico de Benji, con sus propios números, preparada por Copy Estratega.">
+<meta name="twitter:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+<link rel="icon" type="image/png" href="https://storage.googleapis.com/gpt-engineer-file-uploads/ENnY1cQr8yb82cqirDaLRejSItf1/uploads/1759866240739-LeadLinker%20Logo%20Favicon%20.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<style>
+:root{
+  --gold:#C9A84C;
+  --gold-dark:#A8893A;
+  --gold-light:rgba(201,168,76,0.08);
+  --gold-border:rgba(201,168,76,0.2);
+  --dark:#0A0A0A;
+  --dark-mid:#1A1A1A;
+  --body-text:#555555;
+  --muted:#999999;
+  --off-white:#F8F6F0;
+  --white:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.75;color:var(--body-text);background:#fff;-webkit-font-smoothing:antialiased;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.15);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:flex-start;}
+.nav-logo img{height:36px;display:block;}
+
+.card{padding:80px 40px;border-bottom:1px solid rgba(0,0,0,0.05);}
+.card.dark{background:var(--dark);border-bottom:1px solid rgba(255,255,255,0.06);}
+.card.off-white{background:var(--off-white);}
+.container{max-width:800px;margin:0 auto;}
+
+.label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--gold);margin-bottom:16px;}
+
+h1{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(32px,5vw,52px);letter-spacing:-0.5px;line-height:1.1;color:#fff;}
+h2{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(26px,4vw,38px);letter-spacing:-0.3px;line-height:1.15;margin-bottom:20px;color:var(--dark-mid);}
+h3{font-family:'Inter',sans-serif;font-weight:700;font-size:20px;margin-bottom:12px;color:var(--dark-mid);}
+h4{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;color:var(--dark-mid);}
+.dark h2,.dark h3,.dark h4{color:#fff;}
+.dark p{color:rgba(255,255,255,0.7);}
+.off-white h2,.off-white h3{color:var(--dark-mid);}
+
+p{margin-bottom:18px;}
+p:last-child{margin-bottom:0;}
+strong{color:var(--dark-mid);font-weight:600;}
+.dark strong{color:#fff;}
+
+.hero-card{padding-top:140px;padding-bottom:100px;}
+.hero-card h1{margin-bottom:24px;}
+.hero-card .label{color:var(--gold);}
+.hero-subtitle{font-size:19px;color:rgba(255,255,255,0.7);line-height:1.6;max-width:680px;}
+.hero-meta{display:flex;gap:32px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(201,168,76,0.2);flex-wrap:wrap;}
+.hero-meta-label{font-size:10px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;}
+.hero-meta-val{font-size:14px;color:#fff;font-weight:500;}
+
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+.toc-item{background:var(--off-white);border:1px solid var(--gold-border);border-radius:6px;padding:16px 20px;}
+.toc-num{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:6px;}
+.toc-title{font-size:14px;font-weight:700;color:var(--dark-mid);margin-bottom:4px;}
+.toc-desc{font-size:12px;color:var(--muted);line-height:1.4;margin-bottom:0;}
+
+/* RADAR */
+.radar-legend{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;max-width:420px;margin:22px auto 0;}
+.rl-item{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:8px;}
+.rl-item span{color:rgba(255,255,255,0.7);font-size:13px;}
+.rl-item b{font-family:'Playfair Display',serif;font-size:18px;color:var(--gold);}
+.rl-item b.low{color:#D98A86;}
+.chart-note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:22px;text-align:center;max-width:560px;margin-left:auto;margin-right:auto;}
+.dark .chart-note{color:rgba(255,255,255,0.45);}
+.chart-lead{font-size:16px;line-height:1.7;max-width:640px;}
+.chart-legend2{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;margin-top:18px;}
+.cl2-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.7);}
+.cl2-dot{width:14px;height:3px;border-radius:2px;display:inline-block;}
+
+/* SMOKING GUN */
+.gun-card{background:rgba(255,255,255,0.04);border:1px solid var(--gold-border);border-radius:12px;padding:32px;margin-bottom:20px;}
+.gun-card h3{color:#fff;margin-bottom:18px;}
+.gun-pair{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin-bottom:18px;}
+.gun-side{padding:20px 22px;}
+.gun-side.a{background:rgba(0,0,0,0.25);border-right:1px solid rgba(255,255,255,0.1);}
+.gun-side.b{background:rgba(192,80,77,0.12);}
+.gun-side-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+.gun-side.a .gun-side-label{color:var(--gold);}
+.gun-side.b .gun-side-label{color:#E58B88;}
+.gun-side p{font-size:14px;line-height:1.55;color:rgba(255,255,255,0.85);margin-bottom:0;}
+.gun-read{font-size:15px;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:0;}
+.gun-read strong{color:var(--gold);}
+
+/* FINDINGS */
+.finding-card{background:var(--off-white);border-radius:10px;padding:32px;margin-bottom:20px;border-left:4px solid var(--gold);}
+.finding-num{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px;}
+.finding-card h3{margin-bottom:14px;}
+.finding-card p{font-size:15px;line-height:1.7;color:var(--body-text);margin-bottom:14px;}
+.finding-card p:last-child{margin-bottom:0;}
+.finding-evidence{margin-top:18px;padding-top:16px;border-top:1px solid rgba(0,0,0,0.08);font-size:13px;color:var(--muted);}
+.finding-evidence strong{color:var(--gold-dark);}
+
+/* MONEY CHART CARD */
+.money-wrap{background:var(--off-white);border:1px solid var(--gold-border);border-radius:12px;padding:36px 32px 28px;margin-top:8px;}
+.money-headline{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,34px);font-weight:800;color:var(--gold-dark);text-align:center;margin-top:10px;}
+.money-sub{text-align:center;font-size:15px;color:var(--body-text);margin-top:6px;}
+
+.synthesis-quote{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;font-style:italic;color:var(--gold);line-height:1.4;margin:32px 0;padding:24px 0;border-top:1px solid var(--gold-border);border-bottom:1px solid var(--gold-border);}
+
+/* SOLUTION STEPS */
+.step-list{margin-top:28px;}
+.step-item{display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid rgba(0,0,0,0.06);}
+.step-item:last-child{border-bottom:none;}
+.step-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--gold);min-width:32px;line-height:1.2;}
+.step-content h4{margin-bottom:8px;font-size:16px;}
+.step-content p{font-size:14px;color:var(--body-text);line-height:1.65;margin-bottom:0;}
+
+/* NOT NOW */
+.not-list{margin-top:24px;}
+.not-item{padding:14px 0;border-bottom:1px solid rgba(0,0,0,0.05);font-size:15px;color:var(--body-text);}
+.not-item:last-child{border-bottom:none;}
+.not-item::before{content:"·";color:var(--gold);margin-right:12px;font-weight:600;}
+
+/* GUARANTEE */
+.guarantee-box{background:var(--gold-light);border:1px solid var(--gold-border);border-radius:12px;padding:40px;margin-top:8px;}
+.guarantee-box p{font-family:'Playfair Display',serif;font-size:clamp(20px,2.6vw,26px);font-weight:700;font-style:italic;color:var(--dark-mid);line-height:1.4;margin-bottom:0;}
+
+/* CTA */
+.cta-card{text-align:center;}
+.cta-card .divider{width:60px;height:2px;background:var(--gold);margin:0 auto 32px;}
+.cta-card h2{color:#fff;}
+.cta-card p{max-width:560px;margin-left:auto;margin-right:auto;}
+.cta-reply{font-size:18px;color:#fff;font-weight:500;margin:28px 0 8px;}
+.cta-or{font-size:12px;text-transform:uppercase;letter-spacing:3px;color:rgba(255,255,255,0.25);margin:24px 0;}
+.cta-btn{display:inline-block;border:1px solid var(--gold);color:var(--gold);background:transparent;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;padding:16px 36px;border-radius:6px;cursor:pointer;transition:all 0.2s;text-decoration:none;}
+.cta-btn:hover{background:var(--gold);color:#0A0A0A;}
+
+/* ABOUT */
+.about-card{background:#fff;border:1px solid var(--gold-border);border-radius:10px;padding:40px;display:flex;gap:28px;align-items:flex-start;}
+.about-photo{flex:0 0 80px;}
+.about-photo img{width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);}
+.about-body h3{margin-bottom:2px;}
+.about-role{font-size:13px;color:var(--gold-dark);font-weight:600;margin-bottom:16px;}
+.about-body p{font-size:15px;line-height:1.7;color:var(--body-text);}
+
+.transition-card{text-align:center;}
+.transition-card .label{display:block;margin-bottom:24px;}
+.divider{width:60px;height:2px;background:var(--gold);margin:0 auto 32px;}
+.transition-card h2{color:#fff;}
+
+footer{background:#0A0A0A;border-top:1px solid rgba(201,168,76,0.15);padding:48px 40px;text-align:center;}
+.footer-logo img{height:36px;display:block;margin:0 auto 20px;}
+.footer-text{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.6;}
+
+@media (max-width:768px){
+  .card{padding:60px 24px;}
+  .hero-card{padding-top:120px;padding-bottom:80px;}
+  .hero-meta{gap:24px;}
+  .toc-grid{grid-template-columns:1fr;}
+  .gun-pair{grid-template-columns:1fr;}
+  .gun-side.a{border-right:none;border-bottom:1px solid rgba(255,255,255,0.1);}
+  .radar-legend{grid-template-columns:1fr;}
+  .about-card{flex-direction:column;gap:20px;}
+  nav{padding:0 20px;}
+  .nav-logo img{height:30px;}
+  footer{padding:40px 24px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></a>
+</nav>
+
+<!-- CARD 1: HERO -->
+<section class="card dark hero-card">
+  <div class="container">
+    <div class="label">Diagnóstico de fuga de ingresos</div>
+    <h1>La lectura completa<br>de tu diagnóstico, Benji</h1>
+    <p class="hero-subtitle">En pantalla viste el titular: tu nivel, el radar y la fuga principal. Esto es lo que va debajo. Tu caso, leído con tus propios números delante. Y aviso: a ti, que vives de esto, no te voy a contar nada que no puedas verificar tú mismo.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Resultado</div>
+        <div class="hero-meta-val">Nivel 4 de 5 · Score 81/100</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Modelo</div>
+        <div class="hero-meta-val">Membresía recurrente · email marketing (Wild Mail)</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Facturación</div>
+        <div class="hero-meta-val">Más de 100.000 al mes</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Preparado por</div>
+        <div class="hero-meta-val">Daniel · Copy Estratega</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 2: PARA QUE SIRVE -->
+<section class="card">
+  <div class="container">
+    <div class="label">Antes de empezar</div>
+    <h2>Qué es este documento</h2>
+    <p>Hiciste el diagnóstico y viste el resultado en pantalla. Te dije que el desglose completo te lo daba yo. Esto es.</p>
+    <p>Contigo tengo un problema y una ventaja: sabes de email y de sistemas más que la mayoría de gente a la que le mando esto. Así que aquí no hay teoría ni humo. Solo tus propias respuestas puestas una al lado de otra, y lo que sale cuando se miran juntas.</p>
+    <p>Va con tus datos convertidos en imágenes. Una de ellas no te va a gustar, y por eso es la más útil.</p>
+  </div>
+</section>
+
+<!-- CARD 3: QUE HAY DENTRO -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Índice</div>
+    <h2>Qué hay dentro</h2>
+    <div class="toc-grid">
+      <div class="toc-item"><div class="toc-num">01</div><div class="toc-title">La forma de tu sistema</div><div class="toc-desc">Tu radar de 5 dimensiones, a la vista.</div></div>
+      <div class="toc-item"><div class="toc-num">02</div><div class="toc-title">Dos cosas que no encajan</div><div class="toc-desc">Lo que tus propias respuestas se contradicen.</div></div>
+      <div class="toc-item"><div class="toc-num">03</div><div class="toc-title">Fuga 1 · El sistema eres tú</div><div class="toc-desc">Facturas seis cifras a mano.</div></div>
+      <div class="toc-item"><div class="toc-num">04</div><div class="toc-title">Fuga 2 · No mides tu propio email</div><div class="toc-desc">El zapatero descalzo.</div></div>
+      <div class="toc-item"><div class="toc-num">05</div><div class="toc-title">Fuga 3 · Tu captación es prestada</div><div class="toc-desc">Dependes de quién te invite.</div></div>
+      <div class="toc-item"><div class="toc-num">06</div><div class="toc-title">El patrón que las ata</div><div class="toc-desc">El mejor motor, conducido a mano.</div></div>
+      <div class="toc-item"><div class="toc-num">07</div><div class="toc-title">La salida</div><div class="toc-desc">El orden, la regla y la garantía.</div></div>
+      <div class="toc-item"><div class="toc-num">08</div><div class="toc-title">Y una nota para ti</div><div class="toc-desc">Lo que de verdad te pido.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 4: RADAR -->
+<section class="card dark">
+  <div class="container">
+    <div class="label">01 · La forma de tu sistema</div>
+    <h2 style="color:#fff;">Cuatro de cinco. Un sistema casi redondo con una muesca</h2>
+    <p class="chart-lead" style="color:rgba(255,255,255,0.7);margin-bottom:36px;">Tu diagnóstico en una imagen. Cada punta es una dimensión de tu sistema, de 0 en el centro a 100 en el borde. Mira la forma antes de leer los números.</p>
+
+    <svg viewBox="0 0 320 280" width="100%" style="max-width:360px;display:block;margin:0 auto 8px;" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="160,45 255.1,114.1 218.8,225.9 101.2,225.9 64.9,114.1" fill="none" stroke="rgba(255,255,255,0.13)" stroke-width="1"/>
+      <polygon points="160,95 207.6,129.5 189.4,185.5 130.6,185.5 112.4,129.5" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="160" y2="45" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="255.1" y2="114.1" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="218.8" y2="225.9" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="101.2" y2="225.9" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <line x1="160" y1="145" x2="64.9" y2="114.1" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+      <polygon points="160,53 244.65,117.5 218.78,225.9 114.15,208.1 108.64,128.31" fill="rgba(201,168,76,0.28)" stroke="#C9A84C" stroke-width="2"/>
+      <circle cx="160" cy="53" r="3.5" fill="#C9A84C"/>
+      <circle cx="244.65" cy="117.5" r="3.5" fill="#C9A84C"/>
+      <circle cx="218.78" cy="225.9" r="3.5" fill="#C9A84C"/>
+      <circle cx="114.15" cy="208.1" r="3.5" fill="#C9A84C"/>
+      <circle cx="108.64" cy="128.31" r="3.5" fill="#D98A86"/>
+    </svg>
+
+    <div class="radar-legend">
+      <div class="rl-item"><span>Recurrencia y recompra</span><b>100</b></div>
+      <div class="rl-item"><span>Captación</span><b>92</b></div>
+      <div class="rl-item"><span>Relación con tu lista</span><b>89</b></div>
+      <div class="rl-item"><span>Medición</span><b>78</b></div>
+      <div class="rl-item"><span>Arquitectura de conversión</span><b class="low">54</b></div>
+    </div>
+
+    <p class="chart-note">La forma es de las mejores que ha pasado por el diagnóstico: recurrencia a 100, captación a 92, relación a 89. Pero hay una muesca clara, arquitectura de conversión a 54, y una segunda algo más floja, medición a 78. Lo curioso es que las dos cosas que rinden por debajo son justo las que tú vendes resueltas a tus clientes: convertir con sistema y medir.</p>
+  </div>
+</section>
+
+<!-- CARD 5: SMOKING GUN -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">02 · Dos cosas que no encajan</div>
+    <h2>Lo que tú mismo respondiste</h2>
+    <p style="margin-bottom:36px;">No te voy a decir yo dónde está el problema, lo dijiste tú. Y a ti, precisamente, te va a escocer más que a nadie.</p>
+
+    <div class="gun-card" style="background:#fff;border-color:var(--gold-border);">
+      <h3 style="color:var(--dark-mid);">Montas sistemas para todos y el tuyo lo llevas a mano</h3>
+      <div class="gun-pair" style="border-color:rgba(0,0,0,0.1);">
+        <div class="gun-side a" style="background:var(--off-white);border-right-color:rgba(0,0,0,0.1);">
+          <div class="gun-side-label" style="color:var(--gold-dark);">Respondiste</div>
+          <p style="color:var(--dark-mid);">"Facturo más de 100.000 al mes."</p>
+        </div>
+        <div class="gun-side b" style="background:rgba(192,80,77,0.08);">
+          <div class="gun-side-label" style="color:#C0504D;">También respondiste</div>
+          <p style="color:var(--dark-mid);">"Vendo a mano: DMs, llamadas, propuestas una a una."</p>
+        </div>
+      </div>
+      <p class="gun-read" style="color:var(--body-text);">Tu negocio es ayudar a otros a automatizar su email y su captación con ActiveCampaign. Y el tuyo lo cierras a pulso, conversación a conversación. Pasa en las mejores casas. Pero significa que tu facturación tiene un techo exacto, tus horas, y un riesgo exacto: cualquier semana que tú no estés al 100%, la máquina se ralentiza, porque la máquina eres tú. <strong style="color:var(--gold-dark);">Le vendes el sistema al sector y a tu propia venta todavía le falta.</strong></p>
+    </div>
+
+    <div class="gun-card" style="background:#fff;border-color:var(--gold-border);">
+      <h3 style="color:var(--dark-mid);">Mides todo menos, precisamente, el email</h3>
+      <div class="gun-pair" style="border-color:rgba(0,0,0,0.1);">
+        <div class="gun-side a" style="background:var(--off-white);border-right-color:rgba(0,0,0,0.1);">
+          <div class="gun-side-label" style="color:var(--gold-dark);">Respondiste</div>
+          <p style="color:var(--dark-mid);">"Mido mi churn, mi tasa de cierre y sé que más del 30% me recompra."</p>
+        </div>
+        <div class="gun-side b" style="background:rgba(192,80,77,0.08);">
+          <div class="gun-side-label" style="color:#C0504D;">También respondiste</div>
+          <p style="color:var(--dark-mid);">"No sé cuánto facturo atribuible a email, separado del resto."</p>
+        </div>
+      </div>
+      <p class="gun-read" style="color:var(--body-text);">Eres un obseso de los números bien llevado: churn, cierre, recompra, todo medido. Y el único dato que no tienes es cuánto te trae tu propio email, que es literalmente tu producto. Encima le escribes a tu lista una vez por semana, cuando a tus clientes les recomiendas más. <strong style="color:var(--gold-dark);">El zapatero, descalzo.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 6: TRANSITION -->
+<section class="card dark transition-card">
+  <div class="container">
+    <div class="label">Las tres fugas</div>
+    <div class="divider"></div>
+    <h2 style="color:#fff;">Por dónde se te está escapando, con un sistema tan bueno</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,0.6);max-width:600px;margin:20px auto 0;">No son agujeros de construcción, tu sistema está casi redondo. Son tres cosas que rinden por debajo de su techo, y las tres tienen el mismo origen.</p>
+  </div>
+</section>
+
+<!-- CARD 7: FUGA 1 -->
+<section class="card">
+  <div class="container">
+    <div class="finding-card">
+      <div class="finding-num">Fuga 01</div>
+      <h3>El sistema eres tú</h3>
+      <p>Facturas más de 100.000 al mes vendiendo a mano. Eso habla muy bien de ti como vendedor y regular de tu sistema. Cierras bien así, no se trata de que dejes de hacerlo. Se trata de que hoy empiezas tú todas las conversaciones, en vez de que el sistema te las traiga ya empezadas y cualificadas.</p>
+      <p>La diferencia es el techo. Mientras la venta arranca en ti, tu facturación crece al ritmo de tus horas, y se para cuando tú te paras. Un lead magnet, una secuencia corta y un filtro antes de la llamada no te quitan el cierre, te quitan el trabajo de calentar a cada uno desde cero. Llegas a la conversación cuando ya está madura.</p>
+      <div class="finding-evidence"><strong>Tus datos:</strong> Facturación +100.000/mes · Venta a mano (DMs, llamadas, propuestas) · Arquitectura de conversión 54/100 · Fricción declarada: captar leads nuevos.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 8: FUGA 2 + BLIND SPOT CHART -->
+<section class="card off-white">
+  <div class="container">
+    <div class="finding-card" style="background:#fff;">
+      <div class="finding-num">Fuga 02</div>
+      <h3>No mides tu propio email</h3>
+      <p>Mides todo lo demás con precisión de cirujano. Pero no sabes qué parte de tus más de 100.000 al mes viene del email. Y el email es tu producto. Es el dato más fácil de sacar para ti, que tienes la herramienta en la mano, y es justo el que falta.</p>
+      <p>Sin ese número, optimizar tu propio canal es a ojo. No sabes si escribir dos veces por semana en vez de una te subiría los ingresos o no movería nada. No sabes qué secuencia trae dinero y cuál solo entretiene. Estás volando con un instrumento tapado, y es el instrumento que tú instalas a los demás.</p>
+      <div class="finding-evidence"><strong>Tus datos:</strong> Facturación atribuible a email: no la sabes · Frecuencia de envío: 1 vez/semana · Apertura 25-40% · Medición 78/100.</div>
+    </div>
+
+    <div class="money-wrap">
+      <p class="chart-lead" style="text-align:center;margin:0 auto 24px;">Tu facturación, y la parte que trae tu email:</p>
+      <svg viewBox="0 0 300 215" width="100%" style="max-width:380px;display:block;margin:0 auto;" font-family="Inter,sans-serif" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="165" x2="280" y2="165" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
+        <rect x="52" y="35" width="68" height="130" rx="4" fill="#D8D2C4"/>
+        <rect x="178" y="55" width="68" height="110" rx="6" fill="rgba(201,168,76,0.12)" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="6 5"/>
+        <text x="86" y="26" text-anchor="middle" font-size="15" font-weight="800" fill="#1A1A1A">100.000+</text>
+        <text x="212" y="118" text-anchor="middle" font-size="34" font-weight="800" fill="#A8893A">?</text>
+        <text x="86" y="183" text-anchor="middle" font-size="11" fill="#999">Facturas al mes</text>
+        <text x="212" y="183" text-anchor="middle" font-size="11" fill="#999">Lo que trae tu email</text>
+      </svg>
+      <div class="money-headline">No lo sabes</div>
+      <p class="money-sub">La única caja de tu negocio sin medir es, justo, la de tu producto.</p>
+    </div>
+    <p class="chart-note" style="color:var(--muted);">No dibujo una cifra en la segunda barra a propósito: sería inventármela, y eso no lo hacemos. El punto no es cuánto es, es que no lo mides. En un negocio de membresía con lista propia esa barra suele ser alta. La tuya es una incógnita, y el dato está a un par de clics tuyos.</p>
+  </div>
+</section>
+
+<!-- CARD 9: FUGA 3 + DEPENDENCY CHART -->
+<section class="card dark">
+  <div class="container">
+    <div class="label">05 · Tu captación es prestada</div>
+    <h2 style="color:#fff;">Captas a 92, pero dependes de quién te invite</h2>
+    <p class="chart-lead" style="color:rgba(255,255,255,0.7);margin-bottom:34px;">Tu captación es alta, pero viene de colaboraciones, afiliados y apariciones en audiencias ajenas. Cuando hay colaboración, pico. Cuando no, silencio. Por eso tu fricción declarada es captar leads nuevos, aunque captes bien: no controlas el grifo.</p>
+
+    <svg viewBox="0 0 320 200" width="100%" style="max-width:420px;display:block;margin:0 auto;" font-family="Inter,sans-serif" xmlns="http://www.w3.org/2000/svg">
+      <line x1="36" y1="170" x2="300" y2="170" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <polyline points="40,150 75,55 110,158 145,72 180,162 215,60 250,156 285,92" fill="none" stroke="#D98A86" stroke-width="2.5"/>
+      <polyline points="40,158 110,138 180,112 250,86 300,66" fill="none" stroke="#C9A84C" stroke-width="2.5"/>
+      <circle cx="300" cy="66" r="4" fill="#C9A84C"/>
+      <text x="40" y="190" font-size="10" fill="rgba(255,255,255,0.4)">tiempo</text>
+    </svg>
+
+    <div class="chart-legend2">
+      <div class="cl2-item"><span class="cl2-dot" style="background:#D98A86;"></span>Hoy: captación prestada (picos y silencios)</div>
+      <div class="cl2-item"><span class="cl2-dot" style="background:#C9A84C;"></span>Propio: un grifo que abres tú</div>
+    </div>
+
+    <p class="chart-note">La línea roja es tu captación de hoy: sube cuando alguien te abre su audiencia y cae cuando no. La dorada es captación propia y predecible, la misma fuerza pero sin depender de que te inviten. No necesitas nuevos canales, necesitas que uno sea tuyo. Esto ilustra el patrón de tus respuestas, no tus cifras exactas.</p>
+  </div>
+</section>
+
+<!-- CARD 10: EL PATRON -->
+<section class="card">
+  <div class="container">
+    <div class="label">06 · El patrón que las ata</div>
+    <h2>El mejor motor del diagnóstico, conducido a mano</h2>
+    <p>Si juntas las tres fugas, todas dicen lo mismo. No te falta sistema en el producto: tu recurrencia es 100, tu churn lo mides, tu lista te quiere. Te falta sistema en tu propio crecimiento.</p>
+    <div class="synthesis-quote">Tienes el coche más rápido del diagnóstico y lo estás empujando con las manos.</div>
+    <p>Empiezas las ventas tú, no mides tu canal estrella, y dependes de que otros te presten su audiencia. Tres cosas distintas con la misma raíz: el motor de adquisición y conversión va a tu ritmo, no al del sistema. Y tú, que montas exactamente eso para tus clientes, eres el que lo tiene a medias en casa.</p>
+    <p>La buena noticia es la misma de siempre, pero en tu caso más clara: no hay nada que reconstruir. Lo difícil ya lo tienes. Tu retorno está concentrado en sacarte a ti del centro de la rueda, y en tu caso eso se monta rápido porque ya sabes hacerlo.</p>
+  </div>
+</section>
+
+<!-- CARD 11: LO QUE NO HARIA -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Antes de la salida</div>
+    <h2>Lo que no haría ahora</h2>
+    <div class="not-list">
+      <div class="not-item">No saldría a buscar nuevos canales de captación, que es tu instinto. Antes de abrir un grifo más, conviene controlar el que ya tienes y hacerlo propio.</div>
+      <div class="not-item">No tocaría el producto ni la membresía. Recurrencia a 100 y churn medido: eso no se arregla, se protege.</div>
+      <div class="not-item">No dejaría para mañana medir tu email. Es el dato más barato de tu lista de pendientes y el que más decisiones desbloquea.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 12: LA SALIDA -->
+<section class="card">
+  <div class="container">
+    <div class="label">07 · La salida</div>
+    <h2>El orden y la regla</h2>
+    <p>A ti no te voy a explicar cómo se monta cada pieza, lo sabes igual o mejor que yo. Lo que aporto no es el cómo, es el orden y el criterio de alguien que mira tu negocio desde fuera, sin el sesgo de estar dentro.</p>
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Primero, enciende el instrumento que tienes tapado</h4>
+          <p>Mide tu facturación atribuible a email. Es lo más rápido y lo que convierte todo lo demás en decisiones con dato. Hasta que no lo veas, optimizar tu canal es a ciegas.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Después, sácate del arranque de la venta</h4>
+          <p>Una secuencia y un filtro que te traigan conversaciones ya cualificadas, en vez de empezarlas tú todas. No para dejar de vender a mano, que cierras bien, sino para que tus horas dejen de ser el techo.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Y al final, hazte dueño de un grifo de captación</h4>
+          <p>Un canal propio y predecible que no dependa de que te inviten. Las colaboraciones siguen sumando, pero dejan de ser tu única fuente.</p>
+        </div>
+      </div>
+    </div>
+    <div class="synthesis-quote">El orden sale de tus números, no de una corazonada. Y la regla es una sola: una pieza terminada y midiéndose antes de tocar la siguiente.</div>
+    <p>No necesitas más sistema, lo tienes. Necesitas aplicarte el que le montas a los demás. Por eso es de las cosas más rápidas que se pueden arreglar en este diagnóstico.</p>
+  </div>
+</section>
+
+<!-- CARD 13: GARANTIA -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Mi compromiso</div>
+    <h2>La garantía</h2>
+    <div class="guarantee-box">
+      <p>Sistema montado en 15 días y generando leads cualificados en 30. Si no lo conseguimos, seguimos trabajando sin coste hasta que lo hagamos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARD 14: CTA / NOTA PARA BENJI -->
+<section class="card dark cta-card" style="border-top:1px solid rgba(201,168,76,0.3);">
+  <div class="container">
+    <div class="label">08 · Una nota para ti</div>
+    <div class="divider"></div>
+    <h2>Lo que de verdad te pido</h2>
+    <p>Contigo no voy a hacer como que esto es una venta a puerta fría. Te montaría el sistema encantado y creo que en tu caso es de los que se hacen rápido. Pero lo que más me interesa de ti es otra cosa: tú vives de esto y sabes un montón, así que dime qué te ha parecido la herramienta, qué falla, qué le falta, dónde te ha clavado y dónde se ha quedado corta. Ese feedback me vale tanto como un cliente.</p>
+    <div class="cta-reply">Responde al mensaje que te mandé y me lo cuentas.</div>
+    <div class="cta-or">o</div>
+    <a class="cta-btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;" href="#">Reservar una llamada</a>
+  </div>
+</section>
+
+<!-- CARD 15: SOBRE DANIEL -->
+<section class="card off-white">
+  <div class="container">
+    <div class="label">Quién te lo prepara</div>
+    <h2>Sobre Daniel</h2>
+    <div class="about-card">
+      <div class="about-photo"><img src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel García de Celis"></div>
+      <div class="about-body">
+        <h3>Daniel García de Celis</h3>
+        <div class="about-role">Copy Estratega</div>
+        <p>Construyo activos digitales para gente que ya tiene los resultados pero todavía no tiene el sistema que los convierte en clientes nuevos de forma predecible. Emails, landings, herramientas de captación, secuencias. No vendo método. Construyo lo que falta y se mide si funciona.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></div>
+  <div class="footer-text">Diagnóstico de fuga de ingresos · Preparado para Benji (Wild Mail)<br>2026 Copy Estratega. Todos los derechos reservados.</div>
+</footer>
+
+<script>if(!sessionStorage.getItem("_t")){sessionStorage.setItem("_t","1");var _u=encodeURIComponent(navigator.userAgent);var _l=navigator.language;var _r=new URLSearchParams(window.location.search).get('r')||'';fetch("https://script.google.com/macros/s/AKfycbwC8v4oAIgA7j9OfOMxjVQ1OkfB4cBHiRLPknvz1rBFwaW8bBnYJpzBtuSHnKAyIUr6IQ/exec?prospect=Benji+Wild+Mail&page=benji-wildmail-strategy&ua="+_u+"&lang="+_l+"&r="+_r)}</script>
+
+</body>
+</html>
